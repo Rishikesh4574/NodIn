@@ -1,21 +1,33 @@
+
 import streamlit as st
 
 def home_header():
-    st.markdown("""
+
+    logo_url = "https://i.ibb.co/d4xnbMQT/Premium-Lavender-Graduation-Logo.png"
+
+    st.markdown(f"""
         <div style="
-            padding: 20px 0 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            margin-top: 5px;
         ">
+            <img
+                src="{logo_url}"
+                style="
+                    height: 70px;
+                    width: 100px;
+                    object-fit: contain;
+                "
+            />
             <h1 style="
-                font-family: 'Climate Crisis', sans-serif;
-                font-size: 4rem;
-                font-weight: 400;
-                letter-spacing: 1px;
-                color: #FFFFFF;
-                margin: 0;
-                line-height: 1.3;
-                text-shadow: 0px 2px 8px rgba(0,0,0,0.12);
+                text-align: center;
+                color: #E0E3FF;
+                margin-top: 5px;
             ">
-                NODIN
+                NODIN<br>CLASS
             </h1>
         </div>
     """, unsafe_allow_html=True)
